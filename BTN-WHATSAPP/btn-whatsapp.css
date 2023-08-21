@@ -24,9 +24,10 @@ h5,p,a,span {
     min-width: 300px;
     max-width: 350px;
     position: fixed;
-    top: 35vh;
-    right: 2vw;
+    top: 25vh;
+    right: 0vw;
     padding: 10px;
+    margin: 0 10px;
     border-radius: 6px;
     box-shadow: 0 0 0 2px #009600;
     background: #ffffff;
@@ -50,6 +51,8 @@ h5,p,a,span {
 }
 
 ._fechar{
+    width:30px;
+    right:30px;
     position: absolute; 
     font-size: 1.2rem;
     right: 10px;
@@ -80,8 +83,8 @@ h5,p,a,span {
 }
 
 #_modal_img {
-    width: 45px;
-    margin: 0 auto
+    width: 60px;
+    margin: 0 auto;
 }
 
 #_modal_img img {
@@ -93,7 +96,7 @@ h5,p,a,span {
 #_modal_itens {
     flex-grow: 1;
     flex-basis: auto;
-    width: 280px;
+    width: 270px;
     padding: 5px;
 }
 
@@ -135,7 +138,7 @@ h5,p,a,span {
     display: block;
     width: 50px;
     height: 50px;
-    bottom: 30px;
+    bottom: 70px;
     right: 30px;
     background-color: rgba(0, 200, 0, 1);
     color: white;
@@ -186,11 +189,21 @@ h5,p,a,span {
     }
 }
 
+
 @media (max-width: 480px){
     ._modal_wp{
-        max-width: 360px;
+        max-width: 420px;
+        top: 35vh;
+        right: 0vw;
     }
     #_modal_itens{
-        width: 300px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1366px){
+    ._modal_wp{
+        max-width: auto;
+        top: 3vh;
     }
 }
