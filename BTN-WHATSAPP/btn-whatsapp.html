@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="btn-whatsapp.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- MODAL WHATSAPP -->
+
+    <div id="_modal_whatsapp" class="_modal_wp_container">
+        <div class="_modal_wp">
+            <button class="_fechar">X</button>
+            <h3>Selecione seu atendimento</h3>
+            <p>Para <b>comprar, tirar duvidas ou ligar gratuitamente</b> basta selecionar uma das <b>3</b> opções listas abaixo.</p>
+            <div class="_modal_wp_itens">
+                <div id="_modal_img"><a
+                        href="https://api.whatsapp.com/send?phone=5511983762809&text=Sim,%20falar%20sobre%20sa%C3%BAde"><img
+                            src="whatsapp-atendimento.svg" alt=""></a></div>
+                <div id="_modal_itens">
+                    <h5>Vendas via WhatsApp</h5>
+                    <span><a
+                            href="https://api.whatsapp.com/send?phone=5511983762809&text=Sim,%20falar%20sobre%20sa%C3%BAde">Peça
+                            pelo WhatsApp para mais comodidade.</a></span>
+                    <a href="https://api.whatsapp.com/send?phone=5511983762809&text=Sim,%20falar%20sobre%20sa%C3%BAde">Telefone:
+                        <b> 11 9 8376-2809</b></a>
+                </div>
+            </div>
+            <div class="_modal_wp_itens">
+                <div id="_modal_img"><a href="tel:08000241130"><img src="ligacao-atendimento.svg" alt=""></a></div>
+                <div id="_modal_itens">
+                    <h5>Televendas - ligação gratuita</h5>
+                    <span> <a href="tel:08000241130">Ligue gratuitamente e garanta seu suplemento natural.</a></span>
+                    <a href="tel:08000241130">Telefone: <b>0800 024 1130</b></a>
+                </div>
+            </div>
+            <div class="_modal_wp_itens">
+                <div id="_modal_img"><a
+                        href="https://api.whatsapp.com/send?phone=5511910527617&text=Sim,%20falar%20sobre%20sa%C3%BAde"><img
+                            src="sac-atendimento.svg" alt=""></a></div>
+                <div id="_modal_itens">
+                    <h5> SAC</h5>
+                    <span><a
+                            href="https://api.whatsapp.com/send?phone=5511910527617&text=Sim,%20falar%20sobre%20sa%C3%BAde">Para
+                            <b>duvidas ou reclamações</b> ligue o chame no WhatsApp.</a></span>
+                    <a class="_sac_btn" href="https://api.whatsapp.com/send?phone=5511910527617&text=Sim,%20falar%20sobre%20sa%C3%BAde"><b>WhatsApp
+                         </b></a>
+                    <a class="_sac_btn" href="tel:08000225816"><b>Ligação gratuita</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /*Botão Whatsapp*/ -->
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <div class="_float_btn" target="_blank"><i class="fab fa-whatsapp my-float"></i></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- /*Botão Whatsapp*/ -->
+</body>
+<script src="_wp_modal.js"></script>
+</html>
+
+@{
+Html.AdicionarCssNaPosicao(
+new Dictionary<string, int>
+    {
+    {"btn-whatsapp.css", 1}
+    }
+    );
+    }
